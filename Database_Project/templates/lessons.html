@@ -1,0 +1,32 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/static/style.css"/>
+
+    </head>
+    <body>
+      <br>
+      <br>
+      <br>
+      <br>
+        <h1>Racetrack Database</h1>
+        <h2>Race Course Instructors Available </h2>
+
+        {% for employee in query %}
+        <tr>
+        <td>
+            {{employee.Name}}<br><br>
+        </td>
+        </tr>
+        {% endfor %}
+        
+        <ul>
+            <li>20minute Session - $35</li>
+            <li>40minute Session - $70</li>
+            <li>60minute Session - $140</li>
+        </ul>
+
+    <footer>
+      <a href="/"><img src="/static/images/car.png" width="150" height="150"></a>
+    </footer>
+    </body>
+</html>

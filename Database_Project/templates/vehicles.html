@@ -1,0 +1,34 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/static/style.css"/>
+
+    </head>
+    <body>
+      <br>
+      <br>
+      <br>
+      <br>
+        <h1>Racetrack Database</h1>
+        <h2>Register Your Motosport Car</h2>
+        <form method="POST" action="/vehicles">
+          <input type="text" name="vehicleID" placeholder="Enter VehicleID" required>
+          <br><br>
+          <input type="text" name="car_make" placeholder="Enter Make" required>
+          <br><br>
+          <input type="text" name="car_model" placeholder="Enter Model" required>
+          <br><br>
+          <input type="text" name="car_year" placeholder="Enter Year" required>
+          <br><br>
+          <input type="text" name="car_color" placeholder="Enter Color" required>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+        <p>
+          Submit your data to add your vehicle credentials<br> 
+          to the Racetrack Database for races and events
+        </p>
+        <footer>
+          <a href="/"><img src="/static/images/car.png" width="150" height="150"></a>
+        </footer>
+      </body>
+</html>

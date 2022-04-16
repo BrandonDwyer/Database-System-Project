@@ -1,0 +1,31 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/static/style.css"/>
+
+    </head>
+    <body>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>Racetrack Database</h1>
+      <h2> Upcoming SlideShows & CarShows !</h2>
+      <!-- 
+        Add Abliity to add a upcoming show
+        -->
+        {% for upcoming_events in query %}
+        <tr>
+        <td>
+            {{upcoming_events.event_date}}
+            {{upcoming_events.event_Name}}<br><br>
+        
+        </td>
+        </tr>
+
+        {% endfor %}
+  
+    <footer>
+        <a href="/"><img src="/static/images/car.png" width="150" height="150"></a>
+    </footer>
+    </body>
+</html>

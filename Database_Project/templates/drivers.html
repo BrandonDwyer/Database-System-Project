@@ -1,0 +1,33 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/static/style.css"/>
+    </head>
+    <body>
+      <br>
+      <br>
+      <br>
+      <br>
+        <h1>Racetrack Database</h1>
+        <h2>Register As Driver</h2>
+        <form method="POST" action="/drivers" enctype="multipart/form-data">
+          <input type="text" name="ID" placeholder="Enter DriverID" required>
+          <br><br>
+          <input type="text" name="birth" placeholder="Enter Birth" required>
+          <br><br>
+          <input type="text" name="name" placeholder="Enter First Name" required>
+          <br><br>
+          <input type="text" name="vehicle_Used" placeholder="Enter VehicleID Used" required>
+          <br><br>
+          <input type="text" name="country" placeholder="Enter Country" required>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+        <p>
+          Submit your data to add your driver credentials<br>
+          to the Racetrack Database for races and events
+        </p>
+      <footer>
+          <a href="/"><img src="/static/images/car.png" width="150" height="150"></a>
+      </footer>
+      </body>
+</html>
